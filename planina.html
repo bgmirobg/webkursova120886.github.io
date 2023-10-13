@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Хотел</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+       
+        
+        <style>
+            
+            
+            <!-- for slideshow -->
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+
+            
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            
+            @media only screen and (max-width: 300px) {
+                .text {font-size: 11px}
+            }
+            
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            
+            
+            
+            
+            
+            
+        </style>
+        
+    </head>
+    <body style="background-color: hsl(180, 20%, 75%)">
+        
+        
+        
+        <div class="navbar">
+            <a href="index.html">Начало</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Забележителности
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="planina.html">Планина</a>
+                    <a href="Vodopadi.html">Водопади</a>
+                    <a href="gradini.html">Градини</a>
+                </div>
+            </div> 
+            <a href="hotels.html">Хотели</a>
+            <a href="Contact.html">Контакт</a>
+        </div>
+        
+        <script type = "text/javascript" src = "animate.js" ></script>
+
+        
+        <h1 style="padding:25px;color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px hsl(165, 20%, 75%);">Планина</h1>
+        
+        
+       
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://www.gradonna.at/fileadmin/_processed_/e/4/csm_gradonna-resort-hotel-in-osttirol-31_9837d1521e.jpg"
+                     style="width:900px;height:500px;" class="center">
+                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfek1ANo4pspwiPb78OeAopbVeiBFex-xpRg&usqp=CAU"
+                     style="width:900px;height:500px;" class="center">
+                <
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://www.sa-venues.com/visit/mountaininncountryhotel/03g.jpg"
+                     style="width:900px;height:500px;" class="center">
+                
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        
+        <script type = "text/javascript" src = "animate1.js" ></script>
+        
+
+        
+        
+        
+        <p style="margin:40px;padding:20px">
+            Тази планина, разположена на западния бряг на Европа в регион със скалиста красота, е един от най-значимите върхове в района. Той е оформян от природните сили в продължение на хилядолетия. Неговите извисяващи се скали и скалист терен предлагат драматичен и вдъхващ благоговение пейзаж. Посетителите могат да изследват неговите предизвикателни пътеки и скрити долини. Играта на светлини и сенки, заедно с ехото на вятъра, създават сюрреалистична атмосфера, показваща естествената красота на този планински свят.
+        </p>
+        <p style="margin:40px;padding:20px">
+            Подземните образувания в този регион са забележителна витрина на зашеметяващи, сложни минерални находища, които изящно покриват вътрешността на пещерата. Тези находища, предимно съставени от варовик, се предлагат в различни размери, големи и малки, създавайки неземно зрелище. Освен това пещерите са украсени с изящно оформени сталагмити и сталактити, което допълнително подсилва естествената им красота.
+        </p>
+        <p style="margin:40px;padding:20px">
+            
+        </p>
+
+    </body>
+</html>
+

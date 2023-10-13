@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Водопади</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+
+
+        <style>
+
+
+            <!-- for slideshow -->
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+
+            
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active {
+                background-color: #717171;
+            }
+
+            
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            
+            @media only screen and (max-width: 300px) {
+                .text {font-size: 11px}
+            }
+            
+            
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+
+
+
+
+        </style>
+
+    </head>
+    <body style="background-color:lightskyblue;">
+
+
+        <!-- навигационна лента -->
+        <div class="navbar">
+            <a href="index.html">Начало</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Забележителности
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="planina.html">Планина</a>
+                    <a href="Vodopadi.html">Водопади</a>
+                    <a href="gradini.html">Градини</a>
+                </div>
+            </div> 
+            <a href="hotels.html">Хотели</a>
+            <a href="Contact.html">Контакт</a>
+        </div>
+        <script type = "text/javascript" src = "animate.js" ></script>
+
+
+        <h1 style="padding:25px ;color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;">Водопади</h1>
+
+        
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://t3.ftcdn.net/jpg/00/65/74/22/360_F_65742204_EV69QnBet2rpbKeNT4uunAbriMCBbZjg.jpg" 
+                     style="width:900px;height:600px;" class="center">
+                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/03/waterfalls-1679730507.jpg" 
+                     style="width:900px;height:600px;" class="center">
+                
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"    
+                     style="width:900px;height:600px;" class="center">
+                
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+
+        <script type = "text/javascript" src = "animate1.js" ></script>
+
+        <p style="margin:40px;padding:20px">
+            Сгушени сред живописните хълмове, тези очарователни водопади са неразделна част от спиращата дъха долина. Привличайки пътешественици от далеч и нашир, тези водопади са спечелили статута си на любима туристическа дестинация, благодарение на своята завладяваща природна красота и вдъхновяваща среда.
+
+
+        </p>
+
+        <p style="margin:40px;padding:20px">
+            Тези водопади са разположени дълбоко в гъста гора, където единственото прекъсване на спокойствието на гората е мелодичната симфония на каскадна вода. Това девствено място привлича множество туристи и местни жители, които се тълпят към водопада за идиличен ден навън. Това е любимо място за пикник, където семейства и приятели се събират, за да се насладят на зашеметяващата природна среда и да се свържат отново с великолепието на природата. Достъпът до водопадите е лесен, благодарение на леко пресечен път, който криволиче от селото направо към водопада. Докато се приближавате, далечният звук на бърза вода постепенно се засилва, докато след няколко секунди великолепните водопади се разкрият.
+
+
+
+        </p>
+        
+     
+    </body>
+</html>
+

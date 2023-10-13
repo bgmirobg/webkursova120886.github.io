@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Контакт</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <style>
+            
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn {
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            
+            .chip {
+                display: inline-block;
+                padding: 0 25px;
+                height: 50px;
+                font-size: 16px;
+                line-height: 50px;
+                border-radius: 25px;
+                background-color: #f1f1f1;
+            }
+
+            .chip img {
+                float: left;
+                margin: 0 10px 0 -25px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+            
+            .container {
+                position:relative;
+                font-family: Arial;
+            }
+
+            .text-block {
+                position: absolute;
+                bottom:600px;
+                left: 20px;
+                background-color:rgb(40,40,40);
+                color: black;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <a href="index.html">Начало</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Забележителности
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="planina.html">Планина</a>
+                    <a href="Vodopadi.html">Водопади</a>
+                    <a href="gradini.html">Градини</a>
+                </div>
+            </div> 
+            <a href="hotels.html">Хотели</a>
+            <a href="Contact.html">Контакт</a>
+        </div>
+        
+        <img src="https://images.unsplash.com/photo-1516055619834-586f8c75d1de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvbmUlMjBjYWxsfGVufDB8fDB8fHww&w=1000&q=80"
+             style="width:100%">
+        
+        <div class="container">
+            <div class="text-block">
+                    <img src="https://cdn-icons-png.flaticon.com/512/666/666162.png" 
+                      alt="Email Id" width="96" height="96">
+                     <div class="chip">
+                       destinacii@gmail.com
+                     </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="text-block" style="position:absolute; bottom: 500px; left:20px;">
+                <img src="https://img.freepik.com/free-icon/telephone-symbol-button_318-41893.jpg"
+                     alt="Email Id" width="96" height="96">
+                <div class="chip">
+                    08864743453
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </body>
+</html>
